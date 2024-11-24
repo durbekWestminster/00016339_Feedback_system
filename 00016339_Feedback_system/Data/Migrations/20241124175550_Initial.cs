@@ -10,7 +10,7 @@ namespace _00016339_Feedback_system.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "feedbacks",
+                name: "Feedbacks",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -22,14 +22,14 @@ namespace _00016339_Feedback_system.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_feedbacks", x => x.Id);
+                    table.PrimaryKey("PK_Feedbacks", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "feedbacks");
+                name: "Feedbacks");
         }
     }
 }

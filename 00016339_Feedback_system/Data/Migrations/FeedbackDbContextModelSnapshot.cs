@@ -46,7 +46,7 @@ namespace _00016339_Feedback_system.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("feedbacks");
+                    b.ToTable("Feedbacks");
                 });
 #pragma warning restore 612, 618
         }

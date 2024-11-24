@@ -12,7 +12,7 @@ using _00016339_Feedback_system.Data;
 namespace _00016339_Feedback_system.Data.Migrations
 {
     [DbContext(typeof(FeedbackDbContext))]
-    [Migration("20241124135057_Initial")]
+    [Migration("20241124175550_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,7 +48,7 @@ namespace _00016339_Feedback_system.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("feedbacks");
+                    b.ToTable("Feedbacks");
                 });
 #pragma warning restore 612, 618
         }

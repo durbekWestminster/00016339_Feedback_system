@@ -22,8 +22,8 @@ namespace _00016339_Feedback_system.Controllers
 
         public async Task<IActionResult> GetByID(int id)
         {
-            var resultedToDo = await _feedbackRepository.GetByIdAsync(id);
-            return resultedToDo == null ? NotFound() : Ok(resultedToDo);
+            var resultedFeedback = await _feedbackRepository.GetByIdAsync(id);
+            return resultedFeedback == null ? NotFound() : Ok(resultedFeedback);
         }
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
