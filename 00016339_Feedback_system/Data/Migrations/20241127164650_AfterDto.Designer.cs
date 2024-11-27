@@ -12,8 +12,8 @@ using _00016339_Feedback_system.Data;
 namespace _00016339_Feedback_system.Data.Migrations
 {
     [DbContext(typeof(FeedbackDbContext))]
-    [Migration("20241127154509_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20241127164650_AfterDto")]
+    partial class AfterDto
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

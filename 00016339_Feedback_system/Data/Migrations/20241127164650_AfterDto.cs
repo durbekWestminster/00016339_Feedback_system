@@ -4,7 +4,7 @@
 
 namespace _00016339_Feedback_system.Data.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class AfterDto : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
