@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<FeedbackDbContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection")));
 
 builder.Services.AddScoped<IRepository<Feedback>, FeedbackRepository>();
+builder.Services.AddScoped<IRepository<Sender>, SenderRepository>();
 
 var app = builder.Build();
 

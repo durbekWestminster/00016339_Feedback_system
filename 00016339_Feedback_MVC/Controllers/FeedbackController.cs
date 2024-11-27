@@ -7,7 +7,7 @@ namespace _00016339_Feedback_MVC.Controllers
 {
     public class FeedbackController : Controller
     {
-        Uri baseAddress = new Uri("http://localhost:5169/api");
+        Uri baseAddress = new Uri("https://localhost:7147/api");
         private readonly HttpClient _httpClient;
         public FeedbackController()
         {
@@ -20,7 +20,7 @@ namespace _00016339_Feedback_MVC.Controllers
         public IActionResult Index()
         {
             List<FeedbackViewModel> feedback = new List<FeedbackViewModel>();
-            HttpResponseMessage respoonse = _httpClient.GetAsync(_httpClient.BaseAddress + "/feedback/getall").Result;
+            HttpResponseMessage respoonse = _httpClient.GetAsync(_httpClient.BaseAddress + "/Feedback").Result;
             if (respoonse.IsSuccessStatusCode)
             {
                 string data = respoonse.Content.ReadAsStringAsync().Result;

@@ -7,5 +7,6 @@ namespace _00016339_Feedback_system.Data
     {
         public FeedbackDbContext(DbContextOptions<FeedbackDbContext> options) : base(options) {}
         public DbSet<Feedback> Feedbacks { get; set; }
+        public DbSet<Sender> Senders { get; set; }
     }
 }
